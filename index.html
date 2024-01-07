@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+    <input type="text" id="txt"><br>
+    <div class="row">
+        <input type="button" value="1" onclick="document.getElementById('txt').value+=1">
+        <input type="button" value="2" onclick="document.getElementById('txt').value+=2">
+        <input type="button" value="3" onclick="document.getElementById('txt').value+=3">
+    </div>
+
+    <div class="row">
+        <input type="button" value="4" onclick="document.getElementById('txt').value+=4">
+        <input type="button" value="5" onclick="document.getElementById('txt').value+=5">
+        <input type="button" value="6" onclick="document.getElementById('txt').value+=6">
+    </div>
+
+    <div class="row">
+        <input type="button" value="7" onclick="document.getElementById('txt').value+=7">
+        <input type="button" value="8" onclick="document.getElementById('txt').value+=8">
+        <input type="button" value="9" onclick="document.getElementById('txt').value+=9">
+    </div>
+
+    <div class="row">
+        <input type="button" value="0" onclick="document.getElementById('txt').value+=0">
+        <input type="button" value="+" onclick="document.getElementById('txt').value+='+'">
+        <input type="button" value="-" onclick="document.getElementById('txt').value+='-'">
+    </div>
+
+    <div class="row">
+        <input type="button" value="/" onclick="document.getElementById('txt').value+='/'">
+        <input type="button" value="*" onclick="document.getElementById('txt').value+='*'">
+        <input type="button" id="ans" value="=" onclick="result()">
+    </div>
+
+  
+    <script>
+
+        function result(){
+
+        let result = document.getElementById('txt')
+        
+        let answer = eval(result.value)
+        console.log(answer)
+
+        result.value = answer
+
+        }
+    </script>
+</body>
+</html>

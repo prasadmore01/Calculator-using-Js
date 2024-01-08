@@ -4,9 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
+    <h1>Calculator</h1>
     <input type="text" id="txt"><br>
     <div class="row">
         <input type="button" value="1" onclick="document.getElementById('txt').value+=1">
@@ -37,6 +39,10 @@
         <input type="button" value="*" onclick="document.getElementById('txt').value+='*'">
         <input type="button" id="ans" value="=" onclick="result()">
     </div>
+    
+    <div class="row">
+        <input type="button" id="clearBtn" value="Clear" onclick="document.getElementById('txt').value=''">
+    </div>
 
 </div>
     <script>
@@ -51,6 +57,13 @@
         result.value = answer
 
         }
+
+        // function clear(){
+
+        //     let result = document.getElementById('txt')
+        //     result.value = ''
+
+        // }
     </script>
 </body>
 </html>

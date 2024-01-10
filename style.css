@@ -20,7 +20,7 @@
     height: 30px;
     padding: 3px;
     margin:10px 0px;
-  
+   
  
 }
 
@@ -37,7 +37,7 @@
 }
 
 .container input:hover{
-    background-color: gray;
+    background-color: rgb(138, 137, 137);
 }
 
 .container .row{
